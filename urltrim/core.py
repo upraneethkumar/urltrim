@@ -1,4 +1,3 @@
-# urltrim/core.py
 from urllib.parse import urlparse
 import re
 from typing import Optional
@@ -70,10 +69,3 @@ class URLTrim:
     def __str__(self) -> str:
         """Return the trimmed URL when the object is printed."""
         return self.short_url
-
-# Example usage
-if __name__ == "__main__":
-    url = "https://www.amazon.in/Samsung-Smartphone-Titanium-Whitesilver-Included/dp/B0DSKL9MQ8/ref=sr_1_8?nsdOptOutParam=true&sr=8-8&crid=2Q0X3K5Z1G4J&sprefix=samsung%2Caps%2C246&th=1"
-    link = URLTrim(url)
-    print(f"Trimmed: {link}")  # Outputs: Trimmed: example.com/some
-    print(f"Full: {link.get_full_url()}")  # Outputs the full URL
