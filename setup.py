@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="urltrim",
-    version="0.1.0",
+    version="0.1.4",
     author="PRANEETH KUMAR UDDARAJU",
     author_email="upraneeth24@gmail.com",
     description="A Python library to trim long URLs in code",
